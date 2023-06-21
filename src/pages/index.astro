@@ -1,9 +1,8 @@
 ---
-import Layout from '../components/Layout.astro';
----
+import { Code } from 'astro/components';
 
-<Layout title="Astro Quickstart">
-	<main>
-    <a href="test/test">This link works locally</a>
-	</main>
-</Layout>
+export const prerender = false;
+
+const content = await fetch("https://raw.githubusercontent.com/withastro/docs/main/tsconfig.json").then((res) => res.text());
+---
+<Code code={content} lang={'json'}/>
