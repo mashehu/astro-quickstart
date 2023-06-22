@@ -9,4 +9,9 @@ export default defineConfig({
   experimental: {
     assets: true,
   },
+  vite: {
+    ssr: {
+      external: ["astro"],
+    },
+  },
 });
