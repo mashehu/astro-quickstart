@@ -5,3 +5,4 @@
   publish = "dist"
 [functions]
   external_node_modules = ["vscode-oniguruma"]
+  node_bundler = false
