@@ -11,6 +11,6 @@ export default defineConfig({
     redirects: true,
   },
   redirects: 
-    {'anotherPage': 'yetAnotherPage'}
+    {'/anotherPage': '/yetAnotherPage'}
 
 });
