@@ -8,5 +8,9 @@ export default defineConfig({
   adapter: netlify(),
   experimental: {
     assets: true,
+    redirects: true,
   },
+  redirects: 
+    {'anotherPage': 'yetAnotherPage'}
+
 });
